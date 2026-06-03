@@ -4,22 +4,22 @@ cask "go-crap" do
 
   on_macos do
     on_intel do
-      sha256 "c3a72f7ffd71c2c26011b48752b9459622cc19a914d31a038a530f506cfe987c"
+      sha256 "397576885296beaa852c5880bb0000710ae10490c863fa8c5ad0ef8c41ca8fff"
       url "https://github.com/padiazg/go-crap/releases/download/v#{version}/go-crap_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "e888c561fc085c13065f7e55cf2bae805370355d0ff00aa9ba25dffa61353138"
+      sha256 "a3930c7e01c0a43e95ddb1bad9295c8a7ad86ae1e7ba2ec7ccbf77b970ab7cb4"
       url "https://github.com/padiazg/go-crap/releases/download/v#{version}/go-crap_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "af8a653b8428d97b8304193285729eb4d824b3a00c9ae588258394228bf33488"
+      sha256 "e5b8d8543c9f39ae39340ef707ff53ea481945b710b01e34b96e00150491606d"
       url "https://github.com/padiazg/go-crap/releases/download/v#{version}/go-crap_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "4d398544fde98f3ebd430fc348d3d5f21137308ee93fb206d42b519022e7e175"
+      sha256 "a27afe7c618346208b19112426d45202a48658ebfd59e06b05e75bdf0ffd7c29"
       url "https://github.com/padiazg/go-crap/releases/download/v#{version}/go-crap_#{version}_linux_arm64.tar.gz"
     end
   end

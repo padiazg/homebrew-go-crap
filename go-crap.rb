@@ -5,21 +5,21 @@
 class GoCrap < Formula
   desc "go-crap a CLI tool that calculates the CRAP score for Go projects"
   homepage "https://github.com/padiazg/go-crap"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/padiazg/go-crap/releases/download/v0.4.1/go-crap_0.4.1_darwin_amd64.tar.gz"
-      sha256 "50ec314632f77e70f62494ec236514b4d6df1493bccad83615a5668da1ec5717"
+      url "https://github.com/padiazg/go-crap/releases/download/v0.5.0/go-crap_0.5.0_darwin_amd64.tar.gz"
+      sha256 "ceed1676c3ba2bbbce4616466ee351796515c23f8cad4d98d67f350cbe8953dd"
 
       define_method(:install) do
         bin.install "go-crap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/padiazg/go-crap/releases/download/v0.4.1/go-crap_0.4.1_darwin_arm64.tar.gz"
-      sha256 "b3c1ce41eb8cb459f12aadfcbf0579e9797df045022a4d160f7a995ad06336eb"
+      url "https://github.com/padiazg/go-crap/releases/download/v0.5.0/go-crap_0.5.0_darwin_arm64.tar.gz"
+      sha256 "21c4cb8f01f1583ea43af84a91e2b560943c968368621bb0bad5a5bd2bb96ee2"
 
       define_method(:install) do
         bin.install "go-crap"
@@ -29,15 +29,15 @@ class GoCrap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/padiazg/go-crap/releases/download/v0.4.1/go-crap_0.4.1_linux_amd64.tar.gz"
-      sha256 "7e886d75ac93acb69964c15f4cabe55336c294c7ef333de176fedbfdc2442b99"
+      url "https://github.com/padiazg/go-crap/releases/download/v0.5.0/go-crap_0.5.0_linux_amd64.tar.gz"
+      sha256 "dbdcbf431e83a665399dbdd0c996e3ebccb501d6e2aded2b792b0af709771920"
       define_method(:install) do
         bin.install "go-crap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/padiazg/go-crap/releases/download/v0.4.1/go-crap_0.4.1_linux_arm64.tar.gz"
-      sha256 "7e475361c89393b34dbb6ec514543416ea46720a20ef6a06b091020220fb4062"
+      url "https://github.com/padiazg/go-crap/releases/download/v0.5.0/go-crap_0.5.0_linux_arm64.tar.gz"
+      sha256 "601711968ad03f1ad5ec91bfe64c0218fe4422100deb2dddae29fa1fb938336a"
       define_method(:install) do
         bin.install "go-crap"
       end
